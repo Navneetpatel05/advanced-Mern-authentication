@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const server = "http://localhost:5000";
+const server = "http://localhost:5001";
 
 const getCookie = (name) => {
   const value = `; ${document.cookie}`;
