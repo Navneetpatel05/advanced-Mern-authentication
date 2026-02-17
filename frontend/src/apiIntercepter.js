@@ -1,6 +1,8 @@
 import axios from "axios";
 
+
 const server = import.meta.env.VITE_SERVER_URL || "";
+
 
 const getCookie = (name) => {
   const value = `; ${document.cookie}`;
@@ -117,3 +119,4 @@ api.interceptors.response.use(
 );
 
 export default api;
+
