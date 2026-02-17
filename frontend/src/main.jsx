@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { AppProvider } from "./context/AppContext.jsx";
 
-export const server = "http://localhost:5001";
+export const server = "https://advanced-mern-authentication-backend.onrender.com";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
