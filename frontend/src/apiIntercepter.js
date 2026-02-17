@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const server = "http://localhost:5001";
+const server = "https://advanced-mern-authentication-backend.onrender.com";
 
 const getCookie = (name) => {
   const value = `; ${document.cookie}`;
@@ -117,3 +117,4 @@ api.interceptors.response.use(
 );
 
 export default api;
+
