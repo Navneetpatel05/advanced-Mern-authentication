@@ -24,7 +24,7 @@ const Register = () => {
       setEmail("");
       setPassword("");
     } catch (error) {
-      toast.error(error.response.data.message);
+      toast.error(error.response?.data?.message || "Registration failed. Please try again.");
     } finally {
       setBtnLoading(false);
     }
