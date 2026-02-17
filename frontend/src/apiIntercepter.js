@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const server = "http://localhost:5001";
+const server = import.meta.env.VITE_SERVER_URL || "";
 
 const getCookie = (name) => {
   const value = `; ${document.cookie}`;

@@ -23,7 +23,7 @@ const Login = () => {
       localStorage.setItem("email", email);
       navigate("/verifyotp");
     } catch (error) {
-      toast.error(error.response.data.message);
+      toast.error(error.response?.data?.message || "Login failed. Please try again.");
     } finally {
       setBtnLoading(false);
     }

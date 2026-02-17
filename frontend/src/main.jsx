@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { AppProvider } from "./context/AppContext.jsx";
 
-export const server = "http://localhost:5001";
+export const server = import.meta.env.VITE_SERVER_URL || "";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
